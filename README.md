@@ -78,6 +78,23 @@ Angular funciona permitiéndonos extender HTML, expresando funcionalidad a trav�
 
 * Angular a su vez tiene soporte ya incluido para comunicación con servicios de back-end (es fácil que nuestras webs apps se conecten a nuestros backends y ejecuten leogica del lado del servidor).
  
-## El problema que Angular quiere resolver
+### El problema que Angular quiere resolver
 
 Complejidad de manejar el DOM  y la lógica de una aplicación manualmente.
+
+
+### Angular 2 vs "Angular 1"
+
+La versión del framework que usaremos es comunmente llamada como "Angular 2", o simplemente, Angular. Esta versión provee una serie de ventajas interesantes respecto a la versión anterior:
+
+1) Es más rápido. Está más optimizado y corre de 3-5 veces más rápido que Angular 1 .
+
+2) Es más moderno, y toma en cuenta features modernas de  JavaScript que no estaban en otros frameworks de JavaScript (clases, modelos y decorators).
+
+3) Angular 2 tiene una API simple que se engancha con varios exploradores.
+
+4) Mejora la productividad de forma sencilla:  define patrones y building blocks para la construcción de web apps.
+
+También podemos realizar una comparativa a más detallada:
+
+IMAGEN TABLA COMPARATIVA.
