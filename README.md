@@ -103,7 +103,7 @@ IMAGEN TABLA COMPARATIVA.
 
 De aquí en adelante, siempre que hablemos de *Angular*, nos estaremos refiriendo a *Angular 2*.
 
-## "Arquitectura" de una aplicación Angular
+## Arquitectura de una aplicación Angular
 
 En **Angular **, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
 
@@ -121,3 +121,13 @@ Un componente es una una unidad modularizada que define la vista y la lógica pa
 
 
 - **Metadata**, la cual provee información adicional del componente a Angular. Es lo que identifica a la clase  asociada al componente.
+
+IMAGEN COMPONENTES
+
+### ¿Y cómo hacemos que todos estos componentes se integren en una app en Angular?
+
+Esto lo logramos a partir de lo que se llaman, **Angular Modules**. Estos nos permiten organizar nuestros componentes en funcionalidad cohesiva. Cada app angular tiene por lo menos un Angular Module, llamado el **Root Angular Module**.
+
+Por convención, al Root Module le llamaremos **AppModule** en nuestra Angular app.
+
+Una app puede tener un número de modulos adicionales, incluyendo **‘Feature Angular Modules’**, que los usamos para lograr una funcionalidad en especial. Consolidan un conjunto de componentes para una feature particular de una aplicación.
