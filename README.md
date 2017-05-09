@@ -208,6 +208,8 @@ IMAGEN NPM
 
 A su vez, para armar nuestro ambiente también precisaremos instalar NPM. **NPM** o (*Node Package Manager*) es una **Command Line Utility** que nos permite interactuar, de una forma muy simple, con un repositorio enorme de proyectos *open-source*. Ha ganado muchísima popularidad al punto en que se ha convertido en EL package-manager para JavaScript. Con él, podemos instalar librerías, paquetes, aplicaciones, en conjunto con las dependencias de cada uno.
 
+Lo bajaremos desde [aquí](www.npmjs.com). Donde también nos pedirá instalar Node si es que no lo tenemos instalado ya.
+
 #### ¿Por qué lo usaremos en nuestras Apps de Angular? 
 
 1) Lo vamos a usar para instalar todas las librerías de Angular, es decir las dependencias.
@@ -217,4 +219,30 @@ A su vez, para armar nuestro ambiente también precisaremos instalar NPM. **NPM*
 
 
 3) Funciona también como **WebServer**, que "servirá" nuestras Angular SPAs, en un web server liviando que levanta. Esto es mucho más cercano a un escenario real y evita problemas que suelen existir cuando accedemos directamente a los archivos a partir de su path en disco (`file://miarchivo.html`)
+
+### 3) Construyendo nuestro ambiente de desarrollo
+
+En general, el armado del ambiente de desarrollo consiste de los siguientes pasos.
+
+1. Crear una carpeta que contendrá nuestra aplicación.
+2. Agregar los archivos de configuración y definición de paquetes.
+3. Instalar dichos paquetes (usando npm).
+4. Crear el modulo root de nuestra app angular (recordemos que toda app en Angular precisa de uno!)
+5. Creamos el main.ts, que carga dicho modulo angular.
+6. Creamos la página web host, (normalmente llamada index.html).
+
+Estos pasos los podemos hacer manuales cómo se dice en htttp://www.angular.io (Quick Start), o directamente podemos bajar un template desde su repositorio de GitHub: https://github.com/angular/quickstart
+
+Optaremos por la segunda opción, por lo que seguiremos los siguientes pasos:
+
+1) Clonamos el repo: ```git clone https://github.com/angular/quickstart.git nombre-de-tu-proyecto```
+2) Nos movemos a la carpeta del repo: ```cd nombre-de-tu-proyecto```
+3) Borramos los archivos de configuración del repo (ya que no nos interesan):
+  * (OS/X bash): ```rm -rf .git```
+  * (Windows): ```rd .git /S/Q```
+
+
+
+
+
 
