@@ -190,17 +190,31 @@ Entrar al siguiente [link](https://www.typescriptlang.org/play/) y comenzar a ju
 
 Entrar al siguiente [link](https://angular.io/resources/live-examples/quickstart/ts/eplnkr.html) y comenzar a jugar con Angular.
 
-Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que hacer el **setup** de nuestro ambiente de desarrollo
-
-## Eligiendo un editor de código
-
-Hay varios editores de código por la vuelta, pero particularmente el que ~~Gabriel~~  considera más amigable, robusto y completo es ** Visual Studio Code **. Puede ser bajado desde: https://code.visualstudio.com/
+Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que hacer el **setup** de nuestro ambiente de desarrollo en nuestras máquinas.
 
 ## Tutorial: Armando nuestro ambiente
 
+### 1) Eligiendo un editor de código
+
+IMAGEN VISUAL STUDIO CODE
+
+Hay varios editores de código por la vuelta, pero particularmente ~~el que a Gabriel le gusta~~ el que es considerado más amigable, robusto y completo es ** Visual Studio Code **. Puede ser bajado desde: https://code.visualstudio.com/
+
+Sin embargo, otros editores de código como Atom, Brackets, Sublime Text o Eclipse también sirven.
+
+### 2) Instalando NPM (y Node)
+
+IMAGEN NPM
+
+A su vez, para armar nuestro ambiente también precisaremos instalar NPM. **NPM** o (*Node Package Manager*) es una **Command Line Utility** que nos permite interactuar, de una forma muy simple, con un repositorio enorme de proyectos *open-source*. Ha ganado muchísima popularidad al punto en que se ha convertido en EL package-manager para JavaScript. Con él, podemos instalar librerías, paquetes, aplicaciones, en conjunto con las dependencias de cada uno.
+
+#### ¿Por qué lo usaremos en nuestras Apps de Angular? 
+
+1) Lo vamos a usar para instalar todas las librerías de Angular, es decir las dependencias.
 
 
+2) También para ejecutar los transpiladores de nuestro código. NPM nos permitirá correr el compilador que convierta todos nuestros **.ts** en **.js**, de una forma muy simple, para que el navegador los pueda reconocer correctamente.
 
 
-
+3) Funciona también como **WebServer**, que "servirá" nuestras Angular SPAs, en un web server liviando que levanta. Esto es mucho más cercano a un escenario real y evita problemas que suelen existir cuando accedemos directamente a los archivos a partir de su path en disco (`file://miarchivo.html`)
 
