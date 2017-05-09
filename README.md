@@ -245,13 +245,21 @@ Optaremos por la segunda opción, por lo que seguiremos los siguientes pasos:
   
 4) Corremos npm sobre el directorio para que instale las dependencias: ```npm install```
 
-5) Levantamos nuestra app: ```npm start```. Discutir con el docente en clase qué es lo que eso hace.
+5) Levantamos nuestra app: ```npm start```. 
 
+### ¿Qué sucede al levantar nuestra app?
 
+Al arrancar nuestra app usamos el comando ```npm start```. Esto lo que hace es levantar un Web Server para que nuestro navegador pueda consumir los archivos desde ahí, es simplemente un ambiente local que funciona como un ambiente real.
 
+IMAGEN
 
+A su vez, vemos comos se ejecuta **tsc, el TypeScript Compiler**, el cual compila nuestros .ts y los transpila a .js. Como vemos en el VisualStudioCode, vemos que por cada `.ts` que nosotros tenemos, se nos crean un `.js` y un `.js.map`, que fueron generados por el typescript compiler, que transpiró todos nuestros .ts para que el browser pueda entenderlos.
 
+IMAGEN
 
+También vemos que el TypeScript compiler y el FileServer que levantamos, “watchea” cualquier cambio a nivel de código, de manera que cada vez que hacemos un cambio en alguno de nuestros cambios, TypeScript lo recompila y podemos ver los cambios realizados en el código, en el navegador.
+
+IMAGENES DE CAMBIO EN CODIGO
 
 
 
