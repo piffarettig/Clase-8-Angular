@@ -56,6 +56,8 @@ IMAGEN 3
 
 ## ¿Qué es Angular?
 
+IMAGEN LOGO ANGULAR
+
 ### Introducción
 
 Angular |
