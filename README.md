@@ -44,9 +44,9 @@ IMAGEN 2
 
 ### Caractersticas de las SPAs 
 
-1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor.
+1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor. 
 
-2) Mejoran la UX por el hecho de que los usuarios tienen una experiencia ininterrumpida, sin que la página se refresque, y sin agregar complejidad.
+2) Mejoran la UX por el hecho de que los usuarios tienen una experiencia ininterrumpida, sin que la página se refresque, y sin agregar complejidad. 
 
 3) Son ideales para el mundo tanto web y mobile: no se agrega complejidad desde el lado del servidor para poder servir a diferentes dispositivos o plataformas. la lógica de lograr que nuestras web apps sean "responsive" siempre va desde el lado del cliente (browser), no se cargan nuevas páginas todo el tiempo.
 
@@ -56,10 +56,11 @@ IMAGEN 3
 
 ## ¿Qué es Angular?
 
-First Header  |
+Angular |
 ------------- | 
-Content Cell  | 
-Content Cell  |
+Framework de JavaScript | 
+Orientado a construir Client-Side Apps  |
+Basado en HTML, CSS y JavaScript |
 
 La meta de angular es traer las herramientas y capacidades que han estado disponibles para el desarrollo de back-end al cliente web, facilitando el desarrollo, test y mantenimiento de aplicaciones web complejas y ricas en contenido.
 
