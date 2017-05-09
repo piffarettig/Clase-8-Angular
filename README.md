@@ -308,7 +308,7 @@ Y este le contesta:
 
 - La siguiente parte (`systemjs.config.js`), configura SystemJS, para cargar librerías. Lo que hace es cargar todos nuestros archivos de código, sin que nosotros tengamos que hacerlo explícitamente con un tag `<script>`.  Dicha línea carga nuestra aplicación cargando la línea que está en el path "`main.js`".
 
-`main.js` es la transpilación de `main.ts`, (esto es debido a que en tiempo de ejecución los .ts no existen, de manera que siempre referenciamos a .js), que si lo observamos con detalle, define el **root module** de nuestra Angular App.
+`main.js` es la transpilación de `main.ts`, (esto es debido a que en tiempo de ejecución los .ts no existen, de manera que siempre referenciamos a .js), que si lo observamos con detalle, define el **root module**  (lo llamamos siempre **AppModule**) de nuestra Angular App.
 
 ```js
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
