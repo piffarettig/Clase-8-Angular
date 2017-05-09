@@ -45,7 +45,7 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/rta_spa.png)
 
 
-### Caractersticas de las SPAs 
+### Características de las SPAs 
 
 1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor. 
 
