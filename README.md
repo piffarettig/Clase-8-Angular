@@ -54,7 +54,7 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 
 ## ¿Qué es Angular?
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular%20logo.png)
+![imagen](doc-images/angular%20logo.png)
 
 ### Introducción
 
@@ -91,19 +91,19 @@ La versión del framework que usaremos es comunmente llamada como "Angular 2", o
 
 También podemos realizar una comparativa a más detallada:
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular1_vs_angular2.jpg)
+![imagen](doc-images/angular1_vs_angular2.jpg)
 
 De aquí en adelante, siempre que hablemos de *Angular*, nos estaremos refiriendo a *Angular 2*.
 
 ## Arquitectura de una aplicación Angular
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_architecture.png)
+![imagen](doc-images/angular_architecture.png)
 
 En **Angular**, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
 
 ### Pero… ¿Qué es un componente en Angular?
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_components.png)
+![imagen](doc-images/angular_components.png)
 
 Un componente es una una unidad modularizada que define la vista y la lógica para controlar una porción de una pantalla en Angular. Cada componente se compone de:
 
@@ -115,7 +115,7 @@ Un componente es una una unidad modularizada que define la vista y la lógica pa
 
 ### ¿Y cómo hacemos que todos estos componentes se integren en una app en Angular? - Modules
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_features.png)
+![imagen](doc-images/angular_modules_features.png)
 
 Esto lo logramos a partir de lo que se llaman, **Angular Modules**. Estos nos permiten organizar nuestros componentes en funcionalidad cohesiva. Cada app angular tiene por lo menos un Angular Module, llamado el **Root Angular Module**.
 
@@ -131,7 +131,7 @@ Son simplemente funciones que van a modificar nuestras clases de JavaScript. Ang
 
 ## Eligiendo un lenguaje para nuestras apps en Angular
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_ecmascript_es6.png)
+![imagen](doc-images/angular_ecmascript_es6.png)
 
 ### ECMAScript como una especificación de JS
 
@@ -139,7 +139,7 @@ JavaScript como lenguaje de programación, posee una especificación que define 
 
 Las diferentes versiones que van saliendo, se van versionando con un número, y evidentemente cada una tiene diferente soporte en los browsers. Por ejemplo: ES3 es soportado por los browsers viejos, ES5 es actualmente la especificación que soportan todos los browsers nuevos.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_ecmascript_releases.jpg)
+![imagen](doc-images/angular_ecmascript_releases.jpg)
 
 Cuando queremos construir una Angular App, tenemos varias opciones de lenguajes que se adecuan con la especificación de JavaScript, y la idea aquí es ver cuál de ellas pueda resultarnos más útil.
 
@@ -163,8 +163,7 @@ Como Angular es una librería de JavaScript, podemos usar uno de los tantos leng
 * ES2015 (también llamado ES6)
 * TypeScript
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/es_especifications.png)
-
+![imagen](doc-images/es_especifications.png)
 
 Particularmente, eligiremos **TypeScript**. Este este es un superset de JavaScript y debe ser transpilado. Uno de los beneficios más importantes de TypeScript (o simplemente TS), es que es fuertemente tipado, significando que todo tiene un tipo de datos asociado (una variable, una función, un argumento, etc).
 
@@ -198,7 +197,7 @@ Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que h
 
 ### 1) Eligiendo un editor de código
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/code_editors.png)
+![imagen](doc-images/code_editors.png)
 
 Hay varios editores de código por la vuelta, pero particularmente ~~el que a Gabriel le gusta~~ el que es considerado más amigable, robusto y completo es **Visual Studio Code**. Puede ser bajado desde: https://code.visualstudio.com/
 
@@ -249,23 +248,23 @@ Optaremos por la segunda opción, por lo que seguiremos los siguientes pasos:
 
 Veamos la estructura del proyecto, ahora con la carpeta node-modules:
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_structure.png)
+![imagen](doc-images/angular_project_structure.png)
 
 5) Levantamos nuestra app: ```npm start```. 
 
 6) Abrimos el explorador y entramos a `localhost:3000` (aunque se abre por defecto al iniciar el Web Server)
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_app_first_run.png)
+![imagen](doc-images/angular_app_first_run.png)
 
 ### 4) ¿Qué sucede al levantar nuestra app?
 
 Al arrancar nuestra app usamos el comando ```npm start```. Esto lo que hace es levantar un Web Server para que nuestro navegador pueda consumir los archivos desde ahí, es simplemente un ambiente local que funciona como un ambiente real.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/tsc.png)
+![imagen](doc-images/tsc.png)
 
 A su vez, vemos comos se ejecuta **tsc, el TypeScript Compiler**, el cual compila nuestros .ts y los transpila a .js. Como vemos en el VisualStudioCode, vemos que por cada `.ts` que nosotros tenemos, se nos crean un `.js` y un `.js.map`, que fueron generados por el typescript compiler, que transpiró todos nuestros .ts para que el browser pueda entenderlos.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_changes_transpile.png)
+![imagen](doc-images/angular_project_changes_transpile.png)
 
 También vemos que el TypeScript compiler y el FileServer que levantamos, “watchea” cualquier cambio a nivel de código, de manera que cada vez que hacemos un cambio en nuestro código, TypeScript lo recompila y podemos ver los cambios en el navegador.
 
@@ -273,13 +272,13 @@ Ejemplo:
 
 - 1  Cambio el HTML (tengo cambios sin guardar)
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_1.png)
+![imagen](doc-images/angular_project_update_1.png)
 
 - 2  Guardo y veo como el watcher se activa
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_2.png)
+![imagen](doc-images/angular_project_update_2.png)
 
 - 3 Instantáneamente mis cambios en la vista se reflejan en el navegador
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_3.png)
+![imagen](doc-images/angular_project_update_3.png)
 
