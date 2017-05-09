@@ -125,13 +125,11 @@ Un componente es una una unidad modularizada que define la vista y la lógica pa
 
 ### ¿Y cómo hacemos que todos estos componentes se integren en una app en Angular? - Modules
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_root.png)
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_features.png)
 
 Esto lo logramos a partir de lo que se llaman, **Angular Modules**. Estos nos permiten organizar nuestros componentes en funcionalidad cohesiva. Cada app angular tiene por lo menos un Angular Module, llamado el **Root Angular Module**.
 
 Por convención, al Root Module le llamaremos **AppModule** en nuestra Angular app.
-
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_features.png)
 
 Una app puede tener un número de modulos adicionales, incluyendo **‘Feature Angular Modules’**, que los usamos para lograr una funcionalidad en especial. Consolidan un conjunto de componentes para una feature particular de una aplicación.
 
