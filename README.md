@@ -11,12 +11,13 @@ se diferencia de las maneras más "tradicionales", teniendo como objetivo entend
 En el pasado, el flujo que exista en una aplicación web era algo así:
 
 1) Se tenía un **Web Server** que provee "al mundo" el contenido de nuestro sitio (html, js, css, etc).
+
 2) Luego, se utilizaba un **Browser** para ir a buscar dicho contenido, a partir de una solicitud HTTP.  Por ejemplo, cada vez que entramos a **http://www.starwars.es/**
 
 En el momento en el que obteníamos la página, nuestro **Browser/Explorador** tenía la lógica para mostrarla (renderizarla), y, en cada interacción/clic/evento subsiguiente que nosotros dispararamos sobre dicho html,
 el browser se encargaba de ir a pedir un nuevo .html al Web Server para mostrar el contenido asociado al mismo.
 
-IMAGEN - Intercambio Requests
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/request.png)
 
 Este tipo de aplicaciones son conocidas como **Round-Trip Applications** (o **RTAs**).
 
@@ -35,12 +36,14 @@ Las *SPAs*, si bien siguen manteniendo la misma forma de interactuar **cliente-s
 
 **El documento HTML inicial nunca se recarga**, y el usuario puede seguir intercalando con el html existente mientras las requests ajax terminan de ejecutarse asincrónicamente.
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/spa_rta_3.png)
+
 Particularmente veremos un framework que está 100% orientado a la construcción de SPAs: **Angular**.
 
 El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar se acerca al modelo de **Single-Page**. No quiere decir que no se pueda usar para Round-trip, pero hay otras herramientas, como **jQuery**, que lo hacen mejor.
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/rta_spa.png)
 
-IMAGEN 2
 
 ### Caractersticas de las SPAs 
 
@@ -51,6 +54,8 @@ IMAGEN 2
 3) Son ideales para el mundo tanto web y mobile: no se agrega complejidad desde el lado del servidor para poder servir a diferentes dispositivos o plataformas. la lógica de lograr que nuestras web apps sean "responsive" siempre va desde el lado del cliente (browser), no se cargan nuevas páginas todo el tiempo.
 
 4) Estan 100% alineadas al concepto de las APIs REST, debido a que estas simplemente exponen puntos para transaccionar y/o recibir o devolver datos, de una forma totalmente separada de la forma en que se van a mostrar.
+
+
 
 IMAGEN 3
 
