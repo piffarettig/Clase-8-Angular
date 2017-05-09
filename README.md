@@ -59,9 +59,7 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 ### Introducción
 
 * Framework de JavaScript 
-
 * Orientado a construir Client-Side Apps  
-
 * Basado en HTML, CSS y JavaScript
 
 La meta de angular es traer las herramientas y capacidades que han estado disponibles para el desarrollo de back-end al cliente web, facilitando el desarrollo, test y mantenimiento de aplicaciones web complejas y ricas en contenido.
@@ -74,9 +72,7 @@ Angular funciona permitiéndonos extender HTML, expresando funcionalidad a trav�
 
 * Angular hace que nuestro HTML sea más expresivo, permitiéndole embeber/agregar features y lógica al HTML para lograr un data-binding con nuestros modelos. Esto nos permite mostrar campos que tengan valores de nuestros modelos/datos de forma sencilla, y tener un seguimiento de los mismos (actualización en tiempo real). 
 
-
 * Angular promueve la modularidad desde su diseño, siendo fácil crear y lograr reuso de los componentes y del contenido.
-
 
 * Angular a su vez tiene soporte ya incluido para comunicación con servicios de back-end (es fácil que nuestras webs apps se conecten a nuestros backends y ejecuten leogica del lado del servidor).
 
@@ -113,12 +109,9 @@ Un componente es una una unidad modularizada que define la vista y la lógica pa
 
 - Un **template (que es el HTML para la UI, tambin llamado la View)**. Sin los datos, por eso un template. Los datos serán inyectados de forma dinámico.
 
-
 - Una **clase que es el código asociado a la View**, teniendo properties/datos que están disponibles para el uso de las Views, y métodos que son lógica o acciones para dichas views. Por ejemplo: responder a un click de un botón, o a un evento.
 
-
 - **Metadata**, la cual provee información adicional del componente a Angular. Es lo que identifica a la clase  asociada al componente.
-
 
 ### ¿Y cómo hacemos que todos estos componentes se integren en una app en Angular? - Modules
 
