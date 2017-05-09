@@ -39,6 +39,9 @@ Particularmente veremos un framework que está 100% orientado a la construcción
 
 El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar se acerca al modelo de **Single-Page**. No quiere decir que no se pueda usar para Round-trip, pero hay otras herramientas, como **jQuery**, que lo hacen mejor.
 
+
+IMAGEN 2
+
 ### Caractersticas de las SPAs 
 
 1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor.
@@ -49,7 +52,14 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 
 4) Estan 100% alineadas al concepto de las APIs REST, debido a que estas simplemente exponen puntos para transaccionar y/o recibir o devolver datos, de una forma totalmente separada de la forma en que se van a mostrar.
 
+IMAGEN 3
+
 ## ¿Qué es Angular?
+
+First Header  |
+------------- | 
+Content Cell  | 
+Content Cell  |
 
 La meta de angular es traer las herramientas y capacidades que han estado disponibles para el desarrollo de back-end al cliente web, facilitando el desarrollo, test y mantenimiento de aplicaciones web complejas y ricas en contenido.
 
