@@ -17,7 +17,7 @@ En el pasado, el flujo que exista en una aplicación web era algo así:
 En el momento en el que obteníamos la página, nuestro **Browser/Explorador** tenía la lógica para mostrarla (renderizarla), y, en cada interacción/clic/evento subsiguiente que nosotros dispararamos sobre dicho html,
 el browser se encargaba de ir a pedir un nuevo .html al Web Server para mostrar el contenido asociado al mismo.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/request.png)
+![imagen](doc-images/request.png)
 
 Este tipo de aplicaciones son conocidas como **Round-Trip Applications** (o **RTAs**).
 
@@ -36,7 +36,7 @@ Las *SPAs*, si bien siguen manteniendo la misma forma de interactuar **cliente-s
 
 **El documento HTML inicial nunca se recarga**, y el usuario puede seguir intercalando con el html existente mientras las requests ajax terminan de ejecutarse asincrónicamente.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/spa_rta_3.png)
+![imagen](doc-images/spa_rta_3.png)
 
 Particularmente veremos un framework que está 100% orientado a la construcción de SPAs: **Angular**.
 
