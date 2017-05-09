@@ -20,7 +20,7 @@ IMAGEN - Intercambio Requests
 
 Este tipo de aplicaciones son conocidas como **Round-Trip Applications** (o **RTAs**).
 
-Durante mucho tiempo, las aplicaciones web se fueron pensando como Round-Trip: El Browser hace el request inicial del documento HTML al servidor, las interacciones del Usuario hacían que el browser solicitara y recibiera un documento HTML completamente nuevo cada vez. En este tipo de aplicación, el browser es solo una especie de renderer de HTML, y toda la lógica de la aplicación va del lado del servidor. El browser realiza una serie de Requests HTTP sin estado que el server maneja generando documentos html dinámicamente.
+Durante mucho tiempo, las aplicaciones web se fueron pensando como Round-Trip: el Browser hace el request inicial del documento HTML al servidor, las interacciones del Usuario hacían que el browser solicitara y recibiera un documento HTML completamente nuevo cada vez. En este tipo de aplicación, **el browser es solo una especie de renderer de HTML**, y toda la lógica de la aplicación va del lado del servidor. El browser realiza una serie de Requests HTTP sin estado que el server maneja generando documentos html dinámicamente.
 
 
 Este modelo, si bien se sigue usando hoy en día, tiene algunas **desventajas**. Por ejemplo:
