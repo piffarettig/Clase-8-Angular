@@ -208,10 +208,11 @@ Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que h
 
 ### 1) Eligiendo un editor de código
 
-![imagen](https://cdn.arstechnica.net/wp-content/uploads/2016/04/2016_04_14_header-640x310.png)
-
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/code_editors.png)
 
 Hay varios editores de código por la vuelta, pero particularmente ~~el que a Gabriel le gusta~~ el que es considerado más amigable, robusto y completo es ** Visual Studio Code **. Puede ser bajado desde: https://code.visualstudio.com/
+
+![imagen](https://cdn.arstechnica.net/wp-content/uploads/2016/04/2016_04_14_header-640x310.png)
 
 Sin embargo, otros editores de código como Atom, Brackets, Sublime Text o Eclipse también sirven.
 
@@ -222,8 +223,6 @@ Sin embargo, otros editores de código como Atom, Brackets, Sublime Text o Eclip
 A su vez, para armar nuestro ambiente también precisaremos instalar NPM. **NPM** o (*Node Package Manager*) es una **Command Line Utility** que nos permite interactuar, de una forma muy simple, con un repositorio enorme de proyectos *open-source*. Ha ganado muchísima popularidad al punto en que se ha convertido en EL package-manager para JavaScript. Con él, podemos instalar librerías, paquetes, aplicaciones, en conjunto con las dependencias de cada uno.
 
 Lo bajaremos desde [aquí](www.npmjs.com). Donde también nos pedirá instalar Node si es que no lo tenemos instalado ya.
-
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/npm_install.png)
 
 #### ¿Por qué lo usaremos en nuestras Apps de Angular? 
 
@@ -240,17 +239,11 @@ Lo bajaremos desde [aquí](www.npmjs.com). Donde también nos pedirá instalar N
 En general, el armado del ambiente de desarrollo consiste de los siguientes pasos.
 
 1. Crear una carpeta que contendrá nuestra aplicación.
-
 2. Agregar los archivos de configuración y definición de paquetes.
-
 3. Instalar dichos paquetes (usando npm).
-
 4. Crear el modulo root de nuestra app angular (recordemos que toda app en Angular precisa de uno!).
-
 5. Creamos el main.ts, que carga dicho modulo angular.
-
 6. Creamos la página web host, (normalmente llamada index.html).
-
 
 Estos pasos los podemos hacer manuales cómo se dice en htttp://www.angular.io (Quick Start), o directamente podemos bajar un template desde su repositorio de GitHub: https://github.com/angular/quickstart
 
@@ -268,15 +261,18 @@ Optaremos por la segunda opción, por lo que seguiremos los siguientes pasos:
 
 5) Levantamos nuestra app: ```npm start```. 
 
+6) Abrimos el explorador y entramos a `localhost:3000` (aunque se abre por defecto al iniciar el Web Server)
+
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_app_first_run.png)
+
+
 ### 4) ¿Qué sucede al levantar nuestra app?
 
 Al arrancar nuestra app usamos el comando ```npm start```. Esto lo que hace es levantar un Web Server para que nuestro navegador pueda consumir los archivos desde ahí, es simplemente un ambiente local que funciona como un ambiente real.
 
-IMAGEN
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/tsc.png)
 
 A su vez, vemos comos se ejecuta **tsc, el TypeScript Compiler**, el cual compila nuestros .ts y los transpila a .js. Como vemos en el VisualStudioCode, vemos que por cada `.ts` que nosotros tenemos, se nos crean un `.js` y un `.js.map`, que fueron generados por el typescript compiler, que transpiró todos nuestros .ts para que el browser pueda entenderlos.
-
-IMAGEN
 
 También vemos que el TypeScript compiler y el FileServer que levantamos, “watchea” cualquier cambio a nivel de código, de manera que cada vez que hacemos un cambio en alguno de nuestros cambios, TypeScript lo recompila y podemos ver los cambios realizados en el código, en el navegador.
 
