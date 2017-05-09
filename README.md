@@ -282,3 +282,38 @@ Ejemplo:
 
 ![imagen](doc-images/angular_project_update_3.png)
 
+### 5) El punto de entrada de nuestra aplicación: index.html
+
+Este es el documento que es llevado desde el Web Server hasta el navegador, aquí comienza a ejecutarse toda nuestra aplicación en Angular.
+
+El proceso es similar a cómo describimos al principio:
+
+Se realiza una request del navegador al web Server:
+
+![imagen](doc-images/angular_request_1.png)
+
+![imagen](doc-images/angular_request_2.png)
+
+Y este le contesta:
+
+![imagen](doc-images/angular_request_3.png)
+
+#### ¿Qué contiene?
+
+![imagen](doc-images/angular_request_4.png)
+
+- Tenemos link tags donde definimos estilos para nuestra app. Stylesheets.
+
+- Tenemos script tags para cargar algunas librerías que necesitamos.
+
+- La siguiente parte (`systemjs.config.js`), configura SystemJS, para cargar librerías. Lo que hace es cargar todos nuestros archivos de código, sin que nosotros tengamos que hacerlo explícitamente con un tag `<script>`.  Dicha línea carga nuestra aplicación cargando la línea que está en el path "`main.js`".
+
+`main.js` es la transpilación de `main.ts`, (esto es debido a que en tiempo de ejecución los .ts no existen, de manera que siempre referenciamos a .js), que si lo observamos con detalle, define el **root module** de nuestra Angular App.
+
+```js
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
