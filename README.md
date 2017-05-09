@@ -166,12 +166,41 @@ Como Angular es una librería de JavaScript, podemos usar uno de los tantos leng
 
 Particularmente, eligiremos **TypeScript**. Este este es un superset de JavaScript y debe ser transpilado. Uno de los beneficios más importantes de TypeScript (o simplemente TS), es que es fuertemente tipado, significando que todo tiene un tipo de datos asociado (una variable, una función, un argumento, etc).
 
-Las ventajas son notorias:
+### Caractersticas de TypeScript
 
 1) Se tienen una enormidad de ventajas a nivel de desarrollo (los IDEs pueden verificar la sintaxis, ofrecer documentación inline, code navigation, etc).
 
 2) TypeScript es usado mismo por el equipo de Angular para desarrollar Angular. Y la documentación de Angular tiene todos los ejemplos usando TypeScript
 
-3) 
+3) Es un lenguaje OpenSource.
+
+4) Compila a JavaScript (viejo y conocido), a través de transpilación.
+
+5) ¿Cómo hace TS para determinar los tipos apropiados cuando usamos librerías de JavaScript que no son fuertemente tipadas? A partir de usar TypeScript definition files (*.d.ts)
+
+6) TypeScript implementa la especificación de ES2015, y permite construir CLASES! Es orientado a objetos permitiendo usar e clases, interfaces y herencia!
+
+Este último punto para nosotros es muy interesante por el hecho de que **tenemos un background** (desde Programación 1), en **lenguajes orientados a objetos** (C++, Java, c#, etc). Usar TypeScript va a ser más natural para todos nosotros.
+
+### Ejercicio: PlayGround de TypeScript
+
+Entrar al siguiente link (https://www.typescriptlang.org/play/) y comenzar a jugar con TypeScript como lenguaje.
+
+### Ejercicio: PlayGround de Angular
+
+Entrar al siguiente link (https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts) y comenzar a jugar con Angular.
+
+Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que hacer el **setup** de nuestro ambiente de desarrollo
+
+## Eligiendo un editor de código
+
+Hay varios editores de código por la vuelta, pero particularmente el que ~~Gabriel~~  considera más amigable, robusto y completo es ** Visual Studio Code **. Puede ser bajado desde: https://code.visualstudio.com/
+
+## Tutorial: Armando nuestro ambiente
+
+
+
+
+
 
 
