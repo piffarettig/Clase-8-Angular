@@ -165,8 +165,7 @@ Aquí ganamos nosotros como desarrolladores, ya que podemos usar todas las featu
 
 ### ¿Qué lenguaje usaremos? : TypeScript
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/typescript_logo.png)
-
+![imagen](https://mobilemancerblog.blob.core.windows.net/blog/2016/08/TypeScript.png)
 
 Como Angular es una librería de JavaScript, podemos usar uno de los tantos lenguajes que compilan a JavaScript, para construir nuestras apps de Angular 2. Las versiones más comunes son:
 
@@ -179,7 +178,7 @@ Como Angular es una librería de JavaScript, podemos usar uno de los tantos leng
 
 Particularmente, eligiremos **TypeScript**. Este este es un superset de JavaScript y debe ser transpilado. Uno de los beneficios más importantes de TypeScript (o simplemente TS), es que es fuertemente tipado, significando que todo tiene un tipo de datos asociado (una variable, una función, un argumento, etc).
 
-### Caractersticas de TypeScript
+### Características de TypeScript
 
 1) Se tienen una enormidad de ventajas a nivel de desarrollo (los IDEs pueden verificar la sintaxis, ofrecer documentación inline, code navigation, etc).
 
