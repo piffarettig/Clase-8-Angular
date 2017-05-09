@@ -55,13 +55,9 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 
 4) Estan 100% alineadas al concepto de las APIs REST, debido a que estas simplemente exponen puntos para transaccionar y/o recibir o devolver datos, de una forma totalmente separada de la forma en que se van a mostrar.
 
-
-
-IMAGEN 3
-
 ## ¿Qué es Angular?
 
-IMAGEN LOGO ANGULAR
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular%20logo.png)
 
 ### Introducción
 
@@ -75,6 +71,8 @@ La meta de angular es traer las herramientas y capacidades que han estado dispon
 
 Angular funciona permitiéndonos extender HTML, expresando funcionalidad a través de elementos, atributos, clases y comentarios. 
 
+**Angular quiere resolver el problema de la complejidad de manejar el DOM  y la lógica de una aplicación manualmente**.
+
 ### ¿Por qué Angular?
 
 * Angular hace que nuestro HTML sea más expresivo, permitiéndole embeber/agregar features y lógica al HTML para lograr un data-binding con nuestros modelos. Esto nos permite mostrar campos que tengan valores de nuestros modelos/datos de forma sencilla, y tener un seguimiento de los mismos (actualización en tiempo real). 
@@ -84,10 +82,6 @@ Angular funciona permitiéndonos extender HTML, expresando funcionalidad a trav�
 
 
 * Angular a su vez tiene soporte ya incluido para comunicación con servicios de back-end (es fácil que nuestras webs apps se conecten a nuestros backends y ejecuten leogica del lado del servidor).
- 
-### El problema que Angular quiere resolver
-
-Complejidad de manejar el DOM  y la lógica de una aplicación manualmente.
 
 
 ### Angular 2 vs "Angular 1"
@@ -104,18 +98,19 @@ La versión del framework que usaremos es comunmente llamada como "Angular 2", o
 
 También podemos realizar una comparativa a más detallada:
 
-IMAGEN TABLA COMPARATIVA.
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular1_vs_angular2.jpg)
 
 De aquí en adelante, siempre que hablemos de *Angular*, nos estaremos refiriendo a *Angular 2*.
 
 ## Arquitectura de una aplicación Angular
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_architecture.png)
+
 En **Angular **, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
 
-
-IMAGEN ARQUITECTURA ANGULAR 
-
 ### Pero… ¿Qué es un componente en Angular?
+
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_components.png)
 
 Un componente es una una unidad modularizada que define la vista y la lógica para controlar una porción de una pantalla en Angular. Cada componente se compone de:
 
@@ -127,13 +122,16 @@ Un componente es una una unidad modularizada que define la vista y la lógica pa
 
 - **Metadata**, la cual provee información adicional del componente a Angular. Es lo que identifica a la clase  asociada al componente.
 
-IMAGEN COMPONENTES
 
 ### ¿Y cómo hacemos que todos estos componentes se integren en una app en Angular? - Modules
+
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_root.png)
 
 Esto lo logramos a partir de lo que se llaman, **Angular Modules**. Estos nos permiten organizar nuestros componentes en funcionalidad cohesiva. Cada app angular tiene por lo menos un Angular Module, llamado el **Root Angular Module**.
 
 Por convención, al Root Module le llamaremos **AppModule** en nuestra Angular app.
+
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_modules_features.png)
 
 Una app puede tener un número de modulos adicionales, incluyendo **‘Feature Angular Modules’**, que los usamos para lograr una funcionalidad en especial. Consolidan un conjunto de componentes para una feature particular de una aplicación.
 
@@ -145,15 +143,21 @@ Son simplemente funciones que van a modificar nuestras clases de JavaScript. Ang
 
 ## Eligiendo un lenguaje para nuestras apps en Angular
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_ecmascript_es6.png)
+
 ### ECMAScript como una especificación de JS
 
 JavaScript como lenguaje de programación, posee una especificación que define todas las reglas que este debe cumplir. Todas las versiones que vayan saliendo siempre de JavaScript, deben respetar dicha especificación/estándar, cuyo nombre es **ECMAScript** o de la forma usual en que se lo abrevia **(ES)**.
 
 Las diferentes versiones que van saliendo, se van versionando con un número, y evidentemente cada una tiene diferente soporte en los browsers. Por ejemplo: ES3 es soportado por los browsers viejos, ES5 es actualmente la especificación que soportan todos los browsers nuevos.
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_ecmascript_releases.jpg)
+
 Cuando queremos construir una Angular App, tenemos varias opciones de lenguajes que se adecuan con la especificación de JavaScript, y la idea aquí es ver cuál de ellas pueda resultarnos más útil.
 
 ### La necesidad de usar Transpilers
+
+![imagen](http://csharpcorner.mindcrackerinc.netdna-cdn.com/article/getting-started-with-typescript-2-0/Images/Getting%20Started%20With%20TypeScript%2021411.png)
 
 Una de las últimas y que tiene más soporte en Angular es **ES2015** (que antes se llamaba **ES6** y que fue aprobada hace 1 año apróximadamente). Esto tiene como consecuencia que la mayora de los browsers todavía no tienen soporte completo para la misma. Ver: http://kangax.github.io/compat-table/es6/
 
@@ -163,11 +167,17 @@ Aquí ganamos nosotros como desarrolladores, ya que podemos usar todas las featu
 
 ### ¿Qué lenguaje usaremos? : TypeScript
 
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/typescript_logo.png)
+
+
 Como Angular es una librería de JavaScript, podemos usar uno de los tantos lenguajes que compilan a JavaScript, para construir nuestras apps de Angular 2. Las versiones más comunes son:
 
 * ES5
 * ES2015 (también llamado ES6)
 * TypeScript
+
+![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/es_especifications.png)
+
 
 Particularmente, eligiremos **TypeScript**. Este este es un superset de JavaScript y debe ser transpilado. Uno de los beneficios más importantes de TypeScript (o simplemente TS), es que es fuertemente tipado, significando que todo tiene un tipo de datos asociado (una variable, una función, un argumento, etc).
 
