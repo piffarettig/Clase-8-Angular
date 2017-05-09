@@ -61,11 +61,11 @@ El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar 
 
 ### Introducción
 
-Angular |
-------------- | 
-Framework de JavaScript | 
-Orientado a construir Client-Side Apps  |
-Basado en HTML, CSS y JavaScript |
+* Framework de JavaScript 
+
+* Orientado a construir Client-Side Apps  
+
+* Basado en HTML, CSS y JavaScript
 
 La meta de angular es traer las herramientas y capacidades que han estado disponibles para el desarrollo de back-end al cliente web, facilitando el desarrollo, test y mantenimiento de aplicaciones web complejas y ricas en contenido.
 
