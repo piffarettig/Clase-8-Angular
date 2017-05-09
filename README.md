@@ -267,11 +267,19 @@ A su vez, vemos comos se ejecuta **tsc, el TypeScript Compiler**, el cual compil
 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_changes_transpile.png)
 
-También vemos que el TypeScript compiler y el FileServer que levantamos, “watchea” cualquier cambio a nivel de código, de manera que cada vez que hacemos un cambio en alguno de nuestros cambios, TypeScript lo recompila y podemos ver los cambios realizados en el código, en el navegador.
+También vemos que el TypeScript compiler y el FileServer que levantamos, “watchea” cualquier cambio a nivel de código, de manera que cada vez que hacemos un cambio en nuestro código, TypeScript lo recompila y podemos ver los cambios en el navegador.
+
+Ejemplo: 
+
+- 1  Cambio el HTML (tengo cambios sin guardar)
 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_1.png)
 
+- 2  Guardo y veo como el watcher se activa
+
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_2.png)
+
+- 3 Instantáneamente mis cambios en la vista se reflejan en el navegador
 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_project_update_3.png)
 
