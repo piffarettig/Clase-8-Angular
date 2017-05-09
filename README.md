@@ -236,10 +236,19 @@ Estos pasos los podemos hacer manuales cómo se dice en htttp://www.angular.io (
 Optaremos por la segunda opción, por lo que seguiremos los siguientes pasos:
 
 1) Clonamos el repo: ```git clone https://github.com/angular/quickstart.git nombre-de-tu-proyecto```
+
 2) Nos movemos a la carpeta del repo: ```cd nombre-de-tu-proyecto```
+
 3) Borramos los archivos de configuración del repo (ya que no nos interesan):
   * (OS/X bash): ```rm -rf .git```
   * (Windows): ```rd .git /S/Q```
+  
+4) Corremos npm sobre el directorio para que instale las dependencias: ```npm install```
+
+5) Levantamos nuestra app: ```npm start```. Discutir con el docente en clase qué es lo que eso hace.
+
+
+
 
 
 
