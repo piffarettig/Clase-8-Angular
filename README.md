@@ -42,9 +42,6 @@ Particularmente veremos un framework que está 100% orientado a la construcción
 
 El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar se acerca al modelo de **Single-Page**. No quiere decir que no se pueda usar para Round-trip, pero hay otras herramientas, como **jQuery**, que lo hacen mejor.
 
-![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/rta_spa.png)
-
-
 ### Características de las SPAs 
 
 1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor. 
