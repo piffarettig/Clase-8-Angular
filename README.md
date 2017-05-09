@@ -1,4 +1,4 @@
-# Angular y el maravilloso mundo de las SPAs
+# Angular y el mundo de las SPAs
 
 ## Introducción al concepto de Single Page Applications
 
@@ -100,3 +100,24 @@ La versión del framework que usaremos es comunmente llamada como "Angular 2", o
 También podemos realizar una comparativa a más detallada:
 
 IMAGEN TABLA COMPARATIVA.
+
+De aquí en adelante, siempre que hablemos de *Angular*, nos estaremos refiriendo a *Angular 2*.
+
+## "Arquitectura" de una aplicación Angular
+
+En **Angular **, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
+
+
+IMAGEN ARQUITECTURA ANGULAR 
+
+### Pero… ¿Qué es un componente en Angular?
+
+Un componente es una una unidad modularizada que define la vista y la lógica para controlar una porción de una pantalla en Angular. Cada componente se compone de:
+
+- Un **template (que es el HTML para la UI, tambin llamado la View)**. Sin los datos, por eso un template. Los datos serán inyectados de forma dinámico.
+
+
+- Una **clase que es el código asociado a la View**, teniendo properties/datos que están disponibles para el uso de las Views, y métodos que son lógica o acciones para dichas views. Por ejemplo: responder a un click de un botón, o a un evento.
+
+
+- **Metadata**, la cual provee información adicional del componente a Angular. Es lo que identifica a la clase  asociada al componente.
