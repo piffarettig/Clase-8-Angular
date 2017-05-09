@@ -184,11 +184,11 @@ Este último punto para nosotros es muy interesante por el hecho de que **tenemo
 
 ### Ejercicio: PlayGround de TypeScript
 
-Entrar al siguiente link (https://www.typescriptlang.org/play/) y comenzar a jugar con TypeScript como lenguaje.
+Entrar al siguiente [link](https://www.typescriptlang.org/play/) y comenzar a jugar con TypeScript como lenguaje.
 
 ### Ejercicio: PlayGround de Angular
 
-Entrar al siguiente link (https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts) y comenzar a jugar con Angular.
+Entrar al siguiente [link](https://angular.io/resources/live-examples/quickstart/ts/eplnkr.html) y comenzar a jugar con Angular.
 
 Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que hacer el **setup** de nuestro ambiente de desarrollo
 
