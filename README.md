@@ -10,23 +10,23 @@ se diferencia de las maneras más "tradicionales", teniendo como objetivo entend
 
 En el pasado, el flujo que exista en una aplicación web era algo así:
 
-1) Se tenía un *Web Server* que provee "al mundo" el contenido de nuestro sitio (html, js, css, etc).
-2) Luego, se utilizaba un *Browser* para ir a buscar dicho contenido, a partir de una solicitud HTTP.  Por ejemplo, cada vez que entramos a http://www.starwars.es/
+1) Se tenía un **Web Server** que provee "al mundo" el contenido de nuestro sitio (html, js, css, etc).
+2) Luego, se utilizaba un **Browser** para ir a buscar dicho contenido, a partir de una solicitud HTTP.  Por ejemplo, cada vez que entramos a **http://www.starwars.es/**
 
-En el momento en el que obteníamos la página, nuestro Browser/Explorador tenía la lógica para mostrarla (renderizarla), y, en cada interacción/clic/evento subsiguiente que nosotros dispararamos sobre dicho html,
+En el momento en el que obteníamos la página, nuestro **Browser/Explorador** tenía la lógica para mostrarla (renderizarla), y, en cada interacción/clic/evento subsiguiente que nosotros dispararamos sobre dicho html,
 el browser se encargaba de ir a pedir un nuevo .html al Web Server para mostrar el contenido asociado al mismo.
 
 IMAGEN - Intercambio Requests
 
-Este tipo de aplicaciones son conocidas como *Round-Trip Applications* (o *RTAs*).
+Este tipo de aplicaciones son conocidas como **Round-Trip Applications** (o **RTAs**).
 
-Durante mucho tiempo, las aplicaciones web se fueron pensando como Round-Trip: El Bowser hace el request inicial del documento HTML al servidor, las interacciones del Usuario hacían que el browser solicitara y recibiera un documento HTML completamente nuevo cada vez. En este tipo de aplicación, el browser es solo una especie de renderer de HTML, y toda la lógica de la aplicación va del lado del servidor. 
-El browser realiza una serie de Requests HTTP sin estado que el server maneja generando documentos html dinámicamente.
+Durante mucho tiempo, las aplicaciones web se fueron pensando como Round-Trip: El Browser hace el request inicial del documento HTML al servidor, las interacciones del Usuario hacían que el browser solicitara y recibiera un documento HTML completamente nuevo cada vez. En este tipo de aplicación, el browser es solo una especie de renderer de HTML, y toda la lógica de la aplicación va del lado del servidor. El browser realiza una serie de Requests HTTP sin estado que el server maneja generando documentos html dinámicamente.
 
 
-Este modelo, si bien se sigue usando hoy en día, tiene algunas desventajas. Por ejemplo:
+Este modelo, si bien se sigue usando hoy en día, tiene algunas **desventajas**. Por ejemplo:
 
 1) El usuario debe esperar mientras el siguiente documento HTML se genera, requieren mayor infraestructura del lado del servidor para procesar todos los requests y manejar el estado de la aplicación, y requieren más ancho de banda, ya que cada documento HTML debe estar autocontenido.
+
 
 2) A su vez, la experiencia de usuario se degrada por factores como el efecto de refreshing (pestañeo) y el tiempo en ir a pedir los recursos al servidor.
 
