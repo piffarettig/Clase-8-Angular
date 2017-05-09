@@ -22,7 +22,6 @@ Este tipo de aplicaciones son conocidas como **Round-Trip Applications** (o **RT
 
 Durante mucho tiempo, las aplicaciones web se fueron pensando como Round-Trip: el Browser hace el request inicial del documento HTML al servidor, las interacciones del Usuario hacían que el browser solicitara y recibiera un documento HTML completamente nuevo cada vez. En este tipo de aplicación, **el browser es solo una especie de renderer de HTML**, y toda la lógica de la aplicación va del lado del servidor. El browser realiza una serie de Requests HTTP sin estado que el server maneja generando documentos html dinámicamente.
 
-
 Este modelo, si bien se sigue usando hoy en día, tiene algunas **desventajas**. Por ejemplo:
 
 1) El usuario debe esperar mientras el siguiente documento HTML se genera, requieren mayor infraestructura del lado del servidor para procesar todos los requests y manejar el estado de la aplicación, y requieren más ancho de banda, ya que cada documento HTML debe estar autocontenido.
@@ -32,12 +31,23 @@ Este modelo, si bien se sigue usando hoy en día, tiene algunas **desventajas**.
 
 ### ¿Cómo funcionan las SPAs? 
 
-Las *SPAs* toman un enfoque diferente. Un HTML inicial se envía al browser, pero las interacciones del usuario generan requests a través de ajax para pequeños fragmentos de HTML o datos que se inserta en el conjunto de elementos que se muestra al usuario. 
+Las *SPAs*, si bien siguen manteniendo la misma forma de interactuar **cliente-servidor**, toman un enfoque diferente. En la petición inicial, un HTML inicial se envía al browser, pero las interacciones del usuario generan requests a través de **AJAX** para pequeños fragmentos de HTML/datos que se insertan en lo que se le muestra al usuario
 
-El documento HTML inicial nunca se recarga, y el usuario puede seguir intercalando con el html existente mientras las requests ajax terminan de ejecutarse asincrónicamente.
+**El documento HTML inicial nunca se recarga**, y el usuario puede seguir intercalando con el html existente mientras las requests ajax terminan de ejecutarse asincrónicamente.
 
-AngularJS logra sus mejores resultados cuando la aplicación a desarrollar se acerca al modelo de Sigle-page. No quiere decir que no se pueda usar para round-trip, pero hay otras herramientas, como Jquery, que lo hacen mejor.
- 
+Particularmente veremos un framework que está 100% orientado a la construcción de SPAs: **Angular**.
+
+El mismo logra logra sus mejores resultados cuando la aplicación a desarrollar se acerca al modelo de **Single-Page**. No quiere decir que no se pueda usar para Round-trip, pero hay otras herramientas, como **jQuery**, que lo hacen mejor.
+
+### Caractersticas de las SPAs 
+
+1) Como ya dijimos, este tipo de Web Apps es conocida porque tienen la posibilidad de redibujar la UI sin tener que realizar una nueva petición (**Round-Trip**) al servidor.
+
+2) Mejoran la UX por el hecho de que los usuarios tienen una experiencia ininterrumpida, sin que la página se refresque, y sin agregar complejidad.
+
+3) Son ideales para el mundo tanto web y mobile: no se agrega complejidad desde el lado del servidor para poder servir a diferentes dispositivos o plataformas. la lógica de lograr que nuestras web apps sean "responsive" siempre va desde el lado del cliente (browser), no se cargan nuevas páginas todo el tiempo.
+
+4) Estan 100% alineadas al concepto de las APIs REST, debido a que estas simplemente exponen puntos para transaccionar y/o recibir o devolver datos, de una forma totalmente separada de la forma en que se van a mostrar.
 
 ## ¿Qué es Angular?
 
