@@ -207,7 +207,7 @@ Esto nos permitirá probar el lenguaje y aprender sobre el mismo sin tener que h
 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/code_editors.png)
 
-Hay varios editores de código por la vuelta, pero particularmente ~~el que a Gabriel le gusta~~ el que es considerado más amigable, robusto y completo es ** Visual Studio Code **. Puede ser bajado desde: https://code.visualstudio.com/
+Hay varios editores de código por la vuelta, pero particularmente ~~el que a Gabriel le gusta~~ el que es considerado más amigable, robusto y completo es **Visual Studio Code**. Puede ser bajado desde: https://code.visualstudio.com/
 
 ![imagen](https://cdn.arstechnica.net/wp-content/uploads/2016/04/2016_04_14_header-640x310.png)
 
@@ -225,9 +225,7 @@ Lo bajaremos desde [aquí](www.npmjs.com). Donde también nos pedirá instalar N
 
 1) Lo vamos a usar para instalar todas las librerías de Angular, es decir las dependencias.
 
-
 2) También para ejecutar los transpiladores de nuestro código. NPM nos permitirá correr el compilador que convierta todos nuestros **.ts** en **.js**, de una forma muy simple, para que el navegador los pueda reconocer correctamente.
-
 
 3) Funciona también como **WebServer**, que "servirá" nuestras Angular SPAs, en un web server liviando que levanta. Esto es mucho más cercano a un escenario real y evita problemas que suelen existir cuando accedemos directamente a los archivos a partir de su path en disco (`file://miarchivo.html`)
 
