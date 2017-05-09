@@ -106,7 +106,7 @@ De aquí en adelante, siempre que hablemos de *Angular*, nos estaremos refiriend
 
 ![imagen](https://github.com/piffarettig/Clase-8-Angular/blob/master/doc-images/angular_architecture.png)
 
-En **Angular **, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
+En **Angular**, una aplicación **se define a partir de un conjunto de componentes**, del mismo modo que también de servicios subyacentes que son comunes a ellos  y permiten el reuso de la lógica. Por ejemplo: servicios para contectarse con APIs REST, servicios que manejen la sesión desde el lado del cliente, servicios de autenticación, etc.
 
 ### Pero… ¿Qué es un componente en Angular?
 
